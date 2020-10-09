@@ -14,7 +14,7 @@ body {
 main img {
   width: 100%;
   border: 2px solid #000000;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 /* /css generale */
 
@@ -28,6 +28,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 header button:first-child {
   width: 30px;
@@ -107,7 +108,14 @@ main {
   position: absolute;
 }
 .product-complete p.sale {
+  padding: 3px;
   color: #000000;
-  top: 8px;
-  right: 8px;
+  top: 5px;
+  right: 5px;
+}
+.product-complete p.sale.high {
+  background-color: rgba(104, 24, 32, 0.5);
+}
+.product-complete p.sale.low {
+  background-color: rgba(82, 233, 46, 0.5);
 }
