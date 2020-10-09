@@ -80,7 +80,7 @@ header .search-bar {
 }
 /* /css header */
 
-/* css main */
+/* css main e container */
 main {
   margin-top: 150px;
 }
@@ -96,9 +96,11 @@ main {
   width: 80%;
   margin: 50px auto;
 }
+/* /css main e container */
+
+/* css prodotto singolo */
 #container .row .product-complete {
   width: calc(100% / 3 - 50px);
-  height: 500px;
   margin: 0 20px;
   display: inline-block;
 }
@@ -133,3 +135,33 @@ main {
 .product-head:hover p.heart {
   display: block;
 }
+.product-complete .product-footer {
+  width: 100%;
+  margin-top: 10px;
+}
+.product-footer p {
+  font-weight: bold;
+  display: inline-block;
+}
+.product-footer p.description {
+  width: 80%;
+}
+.product-footer p.price {
+  width: 18%;
+  text-align: right;
+}
+.product-footer input {
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #681820;
+  border: 5px outset #514d56;
+  cursor: pointer;
+}
+.product-footer input:hover {
+  color: #a56822;
+}
+.product-footer input:focus {
+  outline: none;
+}
+/* /css prodotto singolo */
