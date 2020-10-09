@@ -2,8 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #ada8b4;
 }
 
 body {
   background-color: #514d56;
 }
+
+/* css header */
+header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #9d9aa7;
+  border-bottom: 3px solid #681820;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header button:first-child {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #000000;
+  border: 2px solid #681820;
+  border-radius: 4px;
+  padding: 1px;
+  margin-left: 10px;
+}
+header button:first-child:hover {
+  color: #487eaf;
+}
+#title,
+header .search-bar {
+  display: inline-block;
+  margin-left: 15px;
+}
+#title a {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #681820;
+  text-decoration: none;
+}
+#title a:hover {
+  text-decoration: underline;
+}
+header .search-bar {
+  width: 60%;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+}
+.search-bar > input[type="text"],
+.search-bar .fas.fa-search {
+  padding: 5px;
+  border: 2px solid #681820;
+  border-radius: 4px;
+}
+.search-bar > input[type="text"] {
+  width: 50%;
+}
+.search-bar > input[type="text"]:focus {
+  outline: 0;
+}
+.search-bar .fas.fa-search {
+  color: #000000;
+}
+/* /css header */
