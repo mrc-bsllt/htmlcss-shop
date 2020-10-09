@@ -127,7 +127,7 @@ main {
   font-size: 40px;
   color: #681820;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;;
   left: 50%;
   transform: translatex(-50%);
   display: none;
@@ -137,7 +137,7 @@ main {
 }
 .product-complete .product-footer {
   width: 100%;
-  margin-top: 10px;
+  margin: 0 0 40px 0;
 }
 .product-footer p {
   font-weight: bold;
@@ -151,6 +151,7 @@ main {
   text-align: right;
 }
 .product-footer input {
+  width: 50%;
   margin-top: 10px;
   padding: 5px;
   font-weight: bold;
@@ -165,3 +166,16 @@ main {
   outline: none;
 }
 /* /css prodotto singolo */
+
+/* css footer */
+footer {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin: 30px 0;
+}
+footer span {
+  font-weight: bold;
+  text-decoration: underline;
+}
