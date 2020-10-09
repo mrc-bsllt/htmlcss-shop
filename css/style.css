@@ -7,9 +7,16 @@
   color: #ada8b4;
 }
 
+/* /css generale */
 body {
   background-color: #514d56;
 }
+main img {
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+/* /css generale */
 
 /* css header */
 header {
@@ -74,14 +81,33 @@ header .search-bar {
 
 /* css main */
 main {
-  margin-top: 80px;
+  margin-top: 150px;
 }
 #container {
   width: 80%;
   min-height: 100vh;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 2px solid #681820;
   border-radius: 20px;
-  padding: 50px;
+}
+#container .row {
+  width: 80%;
+  margin: 50px auto;
+}
+#container .row .product-complete {
+  width: calc(100% / 3 - 50px);
+  height: 500px;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+}
+.product-complete .sale,
+.product-complete .heart {
+  position: absolute;
+}
+.product-complete p.sale {
+  color: #000000;
+  top: 8px;
+  right: 8px;
 }
