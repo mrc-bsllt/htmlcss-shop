@@ -101,6 +101,8 @@ main {
   height: 500px;
   margin: 0 20px;
   display: inline-block;
+}
+.row .product-head {
   position: relative;
 }
 .product-complete .sale,
@@ -118,4 +120,16 @@ main {
 }
 .product-complete p.sale.low {
   background-color: rgba(82, 233, 46, 0.5);
+}
+.product-complete p.heart {
+  font-size: 40px;
+  color: #681820;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  display: none;
+}
+.product-head:hover p.heart {
+  display: block;
 }
